@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <div id="app">
+        <a href="index.html"><img :src="brand" class="brand"></a>
+        <div class="PV">
+                <form action="" method="post">
+                    <div class="container">
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="cpsw"><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Enter Password Again" name="cpsw" required>
+
+                        <button type="submit" class="lrbtn">Register</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+    <script src = "main.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+
+</html>

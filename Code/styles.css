@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(47, 174, 253);
+  }
+  /*==================brand, cart===================*/
+  .brand{
+    width: 10%;
+    height: 12%;
+    position: fixed;
+    left: 50%;
+  }
+  .cart{
+    width: 3%;
+    height: 3%;
+    float: right;
+  }
+  /*==================brand, cart===================*/
+  
+  /*==================Login, Register Button===================*/
+  .button{
+    width: 100px;
+    height: 40px;
+    background-color: #CB4335;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition:.5s;
+    margin-right: 10px;
+   }
+   .button:hover{
+     background-color: #7B241C;
+   }
+  /*==================Login, Register Button===================*/
+  
+
+  form {
+    border: 3px solid #f1f1f1;
+  }
+
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .lrbtn {
+    background-color: #228ae0;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .loginbtn:hover {
+    opacity: 0.8;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /*==================Previews===================*/
+  .PV{
+    width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    position: fixed;
+    top: 26%;
+    left: 300px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 600px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -130px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 20px;
+  }
+  
+  .manual-btn:hover{
+    background: red;
+  }
+  
+  #pv1:checked ~ .pv{
+    margin-left: 0;
+  }
+  
+  #pv2:checked ~ .pv{
+    margin-left: -20%;
+  }
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -130px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #pv1:checked ~ .navigation-auto .auto-btn1{
+    background: #CB4335;
+  }
+  
+  #pv2:checked ~ .navigation-auto .auto-btn2{
+    background: #CB4335;
+  }
+  /*==================Previews===================*/

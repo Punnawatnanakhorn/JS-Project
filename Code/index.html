@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Night Owl Shop</title>
+</head>
+<body>
+    <div id="app">
+                <a href="/"><img :src="brand" class="brand"></a>
+                <a href="login.html">
+                    <button type="submit" class="button" style="float:right;">Login</button>
+                </a>
+                <a href="register.html">
+                    <button type="submit" class="button" style="float:right;">Register</button>
+                </a>
+
+        <!--Preview Slide-->   
+        <div class="PV">
+            <div class="slides">
+                <input type="radio" name="pvs" id="pv1">
+                <input type="radio" name="pvs" id="pv2">
+
+                <div class = "slide pv">
+                    <img :src="showcase1">
+                </div>
+                <div class = "slide">
+                    <img :src="showcase2">
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="pv1" class="manual-btn"></label>
+                <label for="pv2" class="manual-btn"></label>
+            </div>
+        </div>
+        <!--Preview Slide--> 
+    </div>
+    <script src = "main.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+</html>
