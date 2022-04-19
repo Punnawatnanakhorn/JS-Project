@@ -27,6 +27,10 @@ app.get('/register',(req,res)=>{
   res.render('../display/register');
 });
 
+app.get('/logged',(req,res)=>{
+  res.render('../display/logged');
+});
+
 
 app.post('/login',(req,res)=>{
   res.redirect('/logged');
