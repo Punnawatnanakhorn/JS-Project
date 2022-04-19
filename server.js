@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-
+const User = require('./models/User');
 
 app.use(express.static(__dirname+'/public'));
 app.set('view engine','ejs');
@@ -27,9 +27,19 @@ app.get('/register',(req,res)=>{
   res.render('../display/register');
 });
 
-app.post('/register',(req,res)=>{
-  res.send('This is fine.');
+
+app.post('/register', async(req,res)=>{
+  const user = new User({
+    email: req.body.email,
+    name: req.body.name,
+    password: req.body.password
+  });
+  await user.save();
+  res.send('Success');
+  
 });
+
+
 
 
 
