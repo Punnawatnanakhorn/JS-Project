@@ -36,7 +36,6 @@ app.get('/register',(req,res)=>{
   res.render('../display/register')
 });
 
-
 app.post("/register", async (req, res) => {
   const userFound = await User.findOne({ email: req.body.email });
 
@@ -45,7 +44,6 @@ app.post("/register", async (req, res) => {
     res.redirect("/register");
   } else {
     try {
-      const hashedPassword = await bcrypt.hash(req.body.password, 10);
       const user = new User({
         name: req.body.name,
         email: req.body.email,
