@@ -29,7 +29,7 @@ app.get('/register',(req,res)=>{
 
 
 app.post('/login',(req,res)=>{
-  res.redirect('/');
+  res.redirect('/logged');
 });
 
 app.post('/register',(req,res)=>{

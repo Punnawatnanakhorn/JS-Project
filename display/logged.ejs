@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Night Owl Shop</title>
+</head>
+<body>
+    <div id="app">
+                <a href="/"><img :src="brand" class="brand"></a>
+                <a href="/index">
+                    <button type="submit" class="button" style="float:right;">logout</button>
+                </a>
+    </div>
+    <script src = "main.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+</html>
