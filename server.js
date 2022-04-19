@@ -36,28 +36,7 @@ app.get('/register',(req,res)=>{
   res.render('../display/register')
 });
 
-app.post("/register", async (req, res) => {
-  const userFound = await User.findOne({ email: req.body.email });
 
-  if (userFound) {
-    req.flash("error", "User with that email already exists");
-    res.redirect("/register");
-  } else {
-    try {
-      const user = new User({
-        name: req.body.name,
-        email: req.body.email,
-        password: hashedPassword,
-      });
-
-      await user.save();
-      res.redirect("/login");
-    } catch (error) {
-      console.log(error);
-      res.redirect("/register");
-    }
-  }
-});
 
 
 
