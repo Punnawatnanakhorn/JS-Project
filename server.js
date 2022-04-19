@@ -28,7 +28,13 @@ app.get('/register',(req,res)=>{
 });
 
 
+app.post('/login',(req,res)=>{
+  res.send('Logged in');
+});
 
+app.post('/register',(req,res)=>{
+  res.send('Register success');
+});
 
 
 
