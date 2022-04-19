@@ -39,31 +39,4 @@ app.get('/register',(req,res)=>{
 
 
 
-app.post("/register", checkNotAuthenticated, async (req, res) => {
-  const userFound = await User.findOne({ email: req.body.email });
-
-  if (userFound) {
-    req.flash("error", "User with that email already exists");
-    res.redirect("/register");
-  } else {
-    try {
-      const hashedPassword = await bcrypt.hash(req.body.password, 10);
-      const user = new User({
-        name: req.body.name,
-        email: req.body.email,
-        password: hashedPassword,
-      });
-
-      await user.save();
-      res.redirect("/login");
-    } catch (error) {
-      console.log(error);
-      res.redirect("/register");
-    }
-  }
-});
-
-
-
-
 app.listen(3000, () => console.log('Server Started'))
