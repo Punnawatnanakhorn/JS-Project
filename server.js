@@ -19,11 +19,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/login',(req,res)=>{
-    res.render('../display/login')
+    res.render('../display/login');
 });
 
 app.get('/register',(req,res)=>{
-  res.render('../display/register')
+  res.render('../display/register');
 });
 
 
@@ -32,18 +32,7 @@ app.use(express.json());
 app.use('/api/user',authRoute);
 
 app.post('/register',async(req,res)=>{
-  const user=new User({
-      name:req.body.name,
-      email:req.body.email,
-      password:req.body.password
-  });
-  try{
-      const savedUser=await user.save();
-      res.send(savedUser);
-  }catch(err){
-      res.status(400).send(err);
-  }
-
+  res.send('This is fine');
 });
 
 app.listen(3000, () => console.log('Server Started'))
