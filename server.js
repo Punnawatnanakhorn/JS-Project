@@ -28,7 +28,7 @@ app.get('/register',(req,res)=>{
 });
 
 
-app.post('/register', async(req,res)=>{
+app.post('/register', (req,res)=>{
   const user = new User({
     email: req.body.email,
     name: req.body.name,
