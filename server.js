@@ -30,8 +30,8 @@ app.get('/register',(req,res)=>{
 
 app.post('/register',(req,res)=>{
   const user = new User({
-    name:req.body.name,
     email:req.body.email,
+    name:req.body.name,
     password:req.body.password
   });
   user.save();
