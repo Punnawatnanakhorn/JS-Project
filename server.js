@@ -31,6 +31,8 @@ app.use(express.json());
 
 app.use('/api/user',authRoute);
 
-
+app.post('/register',async(req,res)=>{
+  res.send('This is fine');
+});
 
 app.listen(3000, () => console.log('Server Started'))
