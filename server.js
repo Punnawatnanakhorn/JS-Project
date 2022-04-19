@@ -14,16 +14,6 @@ const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open',() => console.log('Connected to Database'))
 
-
-
-
-app.use(express.json());
-
-app.use('/api/user',authRoute);
-
-
-
-
 app.get('/', (req, res) => {
     res.render('../display/index');
 });
@@ -37,6 +27,9 @@ app.get('/register',(req,res)=>{
 });
 
 
+app.use(express.json());
+
+app.use('/api/user',authRoute);
 
 
 
