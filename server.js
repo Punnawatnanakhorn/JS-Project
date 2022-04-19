@@ -34,9 +34,7 @@ app.post('/register', async(req,res)=>{
     name: req.body.name,
     password: req.body.password
   });
-  await user.save();
   res.send('Success');
-  
 });
 
 
