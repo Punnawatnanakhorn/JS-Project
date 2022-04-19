@@ -31,6 +31,8 @@ app.use(express.json());
 
 app.use('/api/user',authRoute);
 
+
+
 app.post('/register',async(req,res)=>{
   const user=new User({
     email: req.body.email,
@@ -38,7 +40,7 @@ app.post('/register',async(req,res)=>{
     password: req.body.password
   });
   user.save();
-  res.redirect('/');
+  res.redirect('/register');
 });
 
 app.listen(3000, () => console.log('Server Started'))
