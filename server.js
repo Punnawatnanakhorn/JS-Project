@@ -28,12 +28,13 @@ app.get('/register',(req,res)=>{
 });
 
 
-app.post('/register',(req,res)=>{
+app.post('/register', async(req,res)=>{
   const user = new User({
     email: req.body.email,
     name: req.body.name,
     password: req.body.password
   });
+  await user.save();
   User.execute("INSERT INTO users (email, name, password) VALUE(?,?,?)", [email, name, password])
   res.send('Success');
   
