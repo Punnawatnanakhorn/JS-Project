@@ -38,11 +38,6 @@ app.post('/login',(req,res)=>{
 
 
 app.post('/register', async(req,res)=>{
-  const user = new User({
-    email: req.body.email,
-    name: req.body.name,
-    password: req.body.password
-  });
   res.redirect('/');
 });
 
