@@ -45,7 +45,7 @@ app.post('/register', async(req,res)=>{
     password: req.body.password
   });
   await user.save();
-  res.send('Saved User')
+  res.redirect('/');
 });
 
 
