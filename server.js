@@ -36,6 +36,8 @@ app.post('/login',(req,res)=>{
   res.redirect('/logged');
 });
 
+
+app.use(express.json());
 app.post('/register', async(req,res)=>{
   const user = new User({
     email: req.body.email,
@@ -43,7 +45,7 @@ app.post('/register', async(req,res)=>{
     password: req.body.password
   });
   await user.save();
-  res.redirect('/');
+  res.send('Saved User')
 });
 
 
