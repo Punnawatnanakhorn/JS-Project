@@ -37,14 +37,12 @@ app.post('/login',(req,res)=>{
 });
 
 
-app.use(express.json());
 app.post('/register', async(req,res)=>{
   const user = new User({
     email: req.body.email,
     name: req.body.name,
     password: req.body.password
   });
-  await user.save();
   res.redirect('/');
 });
 
