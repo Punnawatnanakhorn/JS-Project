@@ -71,7 +71,12 @@ body{
 
 
 
-
+  .table1{
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #FF519D;
+  }
   .card {
     background-color: whitesmoke;
     box-shadow: 0 5px 10px 0 red;
