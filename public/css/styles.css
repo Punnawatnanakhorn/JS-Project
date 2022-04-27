@@ -72,6 +72,40 @@ body{
 
 
 
+  .card {
+    background-color: whitesmoke;
+    box-shadow: 0 5px 10px 0 red;
+    max-width: 260px;
+    margin: 20px;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 20px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.3;
+  }
+
+
+
+
+
 
 
 
