@@ -85,6 +85,12 @@ body{
     vertical-align: middle;
     text-align: right ;
   }
+  .am{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
   .card {
     background-color: whitesmoke;
     box-shadow: 0 5px 10px 0 red;
