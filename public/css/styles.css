@@ -74,7 +74,7 @@ body{
   
   .card {
     background-color: whitesmoke;
-    box-shadow: 0 5px 10px 0 red;
+    box-shadow: 0 5px 10px 0 greenyellow;
     max-width: 260px;
     margin: 20px;
     text-align: center;
@@ -82,7 +82,7 @@ body{
   }
   
   .price {
-    color: grey;
+    color: white;
     font-size: 20px;
   }
   
@@ -90,8 +90,8 @@ body{
     border: none;
     outline: 0;
     padding: 12px;
-    color: white;
-    background-color: red;
+    color: black;
+    background-color: green;
     text-align: center;
     cursor: pointer;
     width: 100%;
