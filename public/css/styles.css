@@ -73,7 +73,7 @@ body{
 
   
   .card {
-    background-color: whitesmoke;
+    background-color: rgb(16, 71, 31);
     box-shadow: 0 5px 10px 0 greenyellow;
     max-width: 260px;
     margin: 20px;
