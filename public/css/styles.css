@@ -77,6 +77,14 @@ body{
     height: 50px;
     background-color: #FF519D;
   }
+  .td1{
+    vertical-align: middle;
+    text-align: center ;
+  }
+  .td2{
+    vertical-align: middle;
+    text-align: right ;
+  }
   .card {
     background-color: whitesmoke;
     box-shadow: 0 5px 10px 0 red;
