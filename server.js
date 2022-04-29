@@ -31,6 +31,10 @@ app.get('/logged',(req,res)=>{
   res.render('../display/logged');
 });
 
+app.get('/cart', (req,res)=>{
+  res.render('../display/cart');
+});
+
 
 app.post('/login',(req,res)=>{
   res.redirect('/logged');
