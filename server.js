@@ -15,6 +15,11 @@ const db = mongoose.connection
 db.on('error', (error) => console.error(error))
 db.once('open',() => console.log('Connected to Database'))
 
+
+app.use(express.urlencoded({ extended: true }));
+
+
+
 app.get('/', (req, res) => {
     res.render('../display/index');
 });
@@ -42,7 +47,11 @@ app.post('/login',(req,res)=>{
 
 
 app.post('/register',(req,res)=>{
-  res.redirect('/register');
+  const user=new User({
+    email:req.body.email,
+    name:req.body.name,
+    password:req.body.password
+  });
 });
 
 
