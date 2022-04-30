@@ -70,7 +70,7 @@ body{
 
 
 
-
+/*=====================================products========================================*/
   
   .card {
     background-color: rgb(12, 192, 105);
@@ -80,12 +80,10 @@ body{
     text-align: center;
     font-family: arial;
   }
-  
   .price {
     color: white;
     font-size: 20px;
   }
-  
   .card button {
     border: none;
     outline: 0;
@@ -97,12 +95,11 @@ body{
     width: 100%;
     font-size: 18px;
   }
-  
   .card button:hover {
     opacity: 0.3;
   }
 
-
+/*=====================================products========================================*/
 
 
 
